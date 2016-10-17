@@ -1,11 +1,12 @@
-package common.repository;
+package com.synertrade.training.core.common.repository;
+
+import java.io.Serializable;
+import java.util.UUID;
+
+import javax.persistence.EntityManager;
 
 import org.springframework.data.jpa.repository.support.JpaEntityInformation;
 import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
-
-import javax.persistence.EntityManager;
-import java.io.Serializable;
-import java.util.UUID;
 
 /**
  * Custom repository base class

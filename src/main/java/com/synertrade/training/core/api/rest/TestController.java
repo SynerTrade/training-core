@@ -1,4 +1,4 @@
-package trainingcore.api.rest;
+package com.synertrade.training.core.api.rest;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

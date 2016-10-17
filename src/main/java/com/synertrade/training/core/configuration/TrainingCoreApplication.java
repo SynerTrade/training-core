@@ -1,16 +1,16 @@
-package configuration;
+package com.synertrade.training.core.configuration;
+
+import java.util.Arrays;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.PropertySource;
 
-import java.util.Arrays;
-
 /**
  * Created by tudorg on 10/17/2016.
  */
-@SpringBootApplication(scanBasePackages = {"com.synertrade.training"})
+@SpringBootApplication(scanBasePackages = {"com.synertrade.training.core"})
 @PropertySource("classpath:trainingcore.properties")
 public class TrainingCoreApplication {
 

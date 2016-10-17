@@ -1,9 +1,9 @@
-package common.repository;
+package com.synertrade.training.core.common.repository;
+
+import java.io.Serializable;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
-
-import java.io.Serializable;
 
 /**
  * Custom specific extension of {@link org.springframework.data.jpa.repository.JpaRepository}
