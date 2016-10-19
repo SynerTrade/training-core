@@ -1,10 +1,6 @@
 package com.synertrade.training.core.configuration;
 
-import java.util.Properties;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
+import com.synertrade.training.core.common.repository.BaseRepositoryFactoryBean;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceBuilder;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -17,14 +13,10 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.transaction.support.AbstractPlatformTransactionManager;
 
-import com.synertrade.training.core.common.repository.BaseRepositoryFactoryBean;
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+import java.util.Properties;
 
-
-
-
-/**
- * Created by alexandrun on 6/9/2016.
- */
 @Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = {"com.synertrade.training.core"}, repositoryFactoryBeanClass = BaseRepositoryFactoryBean.class)
